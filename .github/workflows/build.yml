@@ -6,15 +6,15 @@ on:
       with_ios:
         description: '构建 iOS 包（macOS runner 按 10 倍分钟计费；一次约 200 账单分钟，Free 额度一个月只够一次，默认关）'
         type: boolean
-        default: false
+        default: true
       with_macos:
         description: '构建 macOS 包（同样走 macOS runner、同样 10 倍计费；默认关，需要 dmg 时再勾）'
         type: boolean
-        default: false
+        default: true
       full_variants:
         description: 'iOS / macOS 出两个版本（短剧视界 + 全剧视界）；不勾只出全剧视界，省一半 macOS 计费分钟'
         type: boolean
-        default: false
+        default: true
       republish:
         description: '重复发布：同一版本已有 Release / tag 时覆盖重发（取消勾选则报错停止）'
         type: boolean

@@ -68,7 +68,6 @@ jobs:
       - run: go test -race ./...
         continue-on-error: true
         working-directory: native
-        continue-on-error: true
       - run: go test -race -ldflags="-X duanjuapp/native/core.buildAllSources=true" ./...
         working-directory: native
         continue-on-error: true
